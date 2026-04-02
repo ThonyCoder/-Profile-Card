@@ -1,0 +1,130 @@
+:root {
+    --primary-bg-Color: #009EA3
+}
+
+/* Setting Golbal Styling  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styling Background Styles  */
+body {
+    background-color: var(--primary-bg-Color);
+}
+
+.bg-pattern-top, .bg-pattern-bottom {
+    height: 50%;
+    width: 50%;
+}
+
+.bg-pattern-top {
+    position: relative;
+    left: 5%;
+    top: 117px;
+
+}
+
+.bg-pattern-bottom {
+    position: relative;
+    left: 51%;
+    bottom: 90px;
+    overflow: hidden;
+}
+
+/* Profile Container Styling */
+.main-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-Container {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.cover-Container {
+    max-width: 100%;
+    height: 240px;
+}
+
+.cover-Container > img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.profile-Photo-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.profile-Photo {
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.profile-Info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    bottom: 50px;
+    max-width: 110px;
+    margin: 20px;
+}
+
+.profile-Stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 0 25px 0;
+    column-gap: 20px;
+    position: relative;
+    bottom: 20px;
+    border-top: solid black 1px; 
+}
+
+/* Typography Styling */
+.profile-Name, p > span {
+    font-weight: 700;
+}
+
+.profile-Country {
+    font-size: 13px;
+}
+
+.profile-Country, .profile-Number {
+    font-weight: 300;
+}
+
+.profile-Stats > p {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+p > span {
+    font-size: 18px;
+} 
+
+.profile-Stats > p {
+    font-size: 12px;
+    font-weight: 100;
+}
